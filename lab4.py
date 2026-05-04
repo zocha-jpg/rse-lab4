@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import scipy as sp
 
 def my_function():
-  print("Hello from my function")
+  print("Hello from OUR function")
 
 def f(x):
     return x**2 + 10 * np.sin(x)
