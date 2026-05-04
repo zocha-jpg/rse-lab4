@@ -1,16 +1,20 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import scipy as sp
+"""Do some fun stuff"""
+
+import numpy as np  # pylint: disable=import-error
+import matplotlib.pyplot as plt  # pylint: disable=import-error
 
 
 def my_function():
+    """Say hello"""
     print("Hello from my function")
 
 
-def f(x):
-    return x**2 + 10 * np.sin(x)
+def f(a):
+    """Calculate some wack shit"""
+    return a**2 + 10 * np.sin(a)
 
 
-x = np.arange(-5, 5, 0.1)
-plt.plot(x, f(x))
-my_function()
+if __name__ == "__main__":
+    x = np.arange(-5, 5, 0.1)
+    plt.plot(x, f(x))
+    my_function()
